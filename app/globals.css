@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f7f1e8;
+  color: #241a16;
+}
+
+::selection {
+  background-color: #b88746;
+  color: #fffdfc;
+}
+
+.container-content {
+  @apply mx-auto max-w-content px-5 sm:px-8;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-espresso px-6 py-3 text-sm font-medium text-paper transition-colors hover:bg-gold;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border border-espresso/20 bg-transparent px-6 py-3 text-sm font-medium text-espresso transition-colors hover:border-gold hover:text-gold;
+}
+
+.btn-whatsapp {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90;
+}
